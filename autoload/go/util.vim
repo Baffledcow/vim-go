@@ -557,7 +557,7 @@ function! go#util#SetEnv(name, value) abort
     let l:remove = 1
   endif
 
-  call execute('let $' . a:name . ' = "' . a:value . '"')
+  call execute('let $' . a:name . " = '" . a:value . "'")
 
   if l:remove
     function! s:remove(name) abort
